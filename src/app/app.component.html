@@ -22,7 +22,43 @@
           <td>lowercase</td>
           <td>{{ nombre | lowercase }}</td>
         </tr>
+        <tr>
+          <td>{{ nombre }}</td>
+          <td>slice:3</td>
+          <td>{{ nombre | slice: 3 }}</td>
+        </tr>
+        <tr>
+          <td>{{ nombre }}</td>
+          <td>slice:0:3</td>
+          <td>{{ nombre | slice: 0:3 }}</td>
+        </tr>
+        <tr>
+          <td>{{ arreglo }}</td>
+          <td>slice:1:5</td>
+          <td>{{ arreglo | slice: 1:5 }}</td>
+        </tr>
+        <tr>
+          <td>{{ personajes }}</td>
+          <td>slice:1:4</td>
+          <td>{{ personajes | slice: 1:4 }}</td>
+        </tr>
+        <tr>
+          <td>{{ PI }}</td>
+          <td>number</td>
+          <td>{{ PI | number: '3.0-0' }}</td>
+        </tr>
+          <tr>
+          <td>{{ PI }}</td>
+          <td>number</td>
+          <td>{{ PI | number: '.0-2' }}</td>
+        </tr>
+        
       </tbody>
     </table>
+
+    <h4>Slice</h4>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let item of personajes | slice:3:20">{{ item }}</li>
+    </ul>
   </div>
 </div>
