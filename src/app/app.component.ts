@@ -14,4 +14,14 @@ export class AppComponent {
   porcentaje: number = 0.234;
   porcentaje2: number = 0.1936;
   salario: number = 1234.5;
+
+  heroe = {
+    nombre: 'Logan',
+    clave: 'Wolverine',
+    edad: 500,
+    direccion: {
+      calle: 'Primera',
+      casa: 20,
+    },
+  };
 }
