@@ -84,10 +84,16 @@
           <!-- <td>{{ salario | currency: "LMP ":"symbol":".0-0" }}</td> -->
           <td>{{ salario | currency: "CAD":"symbol-narrow":".0-0" }}</td>
         </tr>
+        <tr>
+          <td>{{ valorPromesa }}</td>
+          <td>async</td>
+          <td>{{ valorPromesa | async }}</td>
+        </tr>
       </tbody>
     </table>
   </div>
 </div>
+
 <h3>Slice</h3>
 <ul class="list-group">
   <li class="list-group-item" *ngFor="let item of personajes | slice: 3:20">
@@ -102,6 +108,5 @@
     <pre>
        {{ heroe | json }}
     </pre>
-   
   </div>
 </div>
